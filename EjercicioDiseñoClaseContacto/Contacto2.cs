@@ -26,8 +26,28 @@ namespace EjercicioDiseñoClaseContacto
 
         public DateTime FechaNacimiento{ get; set; }
 
-
         public string TipoContacto{ get; set; }
+
+
+
+        // Constructor con parametros ( Nombre, Telefono y Tipo de Contacto)
+        public Contacto2(string nombre, int telefono, string tipoContacto)
+        {
+            Nombre = nombre;
+            Telefono = telefono;
+            TipoContacto = tipoContacto;
+        }
+
+        // Constructor con parametros ( Nombre, Fecha Nacimiento y Tipo de Contacto)
+        public Contacto2(string nombre, DateTime fechaNacimiento, string tipoContacto) 
+
+
+        {
+            Nombre = nombre;
+            FechaNacimiento = fechaNacimiento;
+            TipoContacto = tipoContacto;
+        }
+
 
 
 
@@ -142,7 +162,7 @@ namespace EjercicioDiseñoClaseContacto
         public void MostrarDatos()
 
         {
-            //Console.WriteLine($"Nombre :{nombre})
+            Console.WriteLine($"Nombre {Nombre}  TipoContacto {TipoContacto}");
 
         }
 

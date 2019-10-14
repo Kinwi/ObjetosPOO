@@ -33,5 +33,8 @@ namespace Ejercicio7
         {
             return (Litros / Kilometros) * 100;
         }
+
+        
+
     }
 }
